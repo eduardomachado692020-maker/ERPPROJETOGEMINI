@@ -1294,10 +1294,10 @@ def venda_delete(sale_id):
 
 if __name__ == "__main__":
     check_files()
-    port = int(os.environ.get("PORT","5000"))
-    host = os.environ.get("HOST","127.0.0.1")
-    host = '127.0.0.1'
-port = _free_port(5000)
-url = f'http://{host}:{port}'
-_open_browser(url)
-app.run(host=host, port=port, debug=False, use_reloader=False)
+    port = int(os.environ.get("PORT", "5000"))
+    host = os.environ.get("HOST", "127.0.0.1")
+    host = "127.0.0.1"
+    port = _free_port(port)
+    url = f"http://{host}:{port}"
+    _open_browser(url)
+    app.run(host=host, port=port, debug=False, use_reloader=False)
